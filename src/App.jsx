@@ -8,6 +8,7 @@ import School from './pages/School'
 import College from './pages/College'
 import Footer from './components/Footer'
 import Sch from './pages/School copy'
+import ScrollToTop from './components/newrout';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
     <Router>
+      <ScrollToTop />
       <NavBlackTheme />
       <Routes>
         <Route path="/" element={<Home />} />
