@@ -1,0 +1,119 @@
+/* TabSection.css */
+
+.tabs-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  background-color: #000000; /* White background for entire section */
+  border-radius: 8px;
+}
+
+.tabs-header {
+  display: flex;
+  background-color: #000000; /* Black background for tabs */
+  border-radius: 8px 8px 0 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabs-header::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ffffff; /* White text color */
+  background-color: #000000; /* Black background */
+  border: none;
+  border-radius: 8px 8px 0 0;
+  margin-right: 0.25rem;
+}
+
+.tab-button.active-tab {
+  background-color: #464b5a79; /* White background for active tab */
+  color: #ffffff; /* Black text for active tab */
+}
+
+.tab-content {
+  background-color: #000000; /* White background for tab content */
+  border-radius: 0 0 8px 8px;
+  color: #000000; /* Black text color */
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  background-color: #464b5a79; /* Light gray for section background */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.section-image {
+  flex-basis: 30%; /* Adjust width as needed */
+  max-width: 300px;
+  margin-right: 1.5rem;
+  border-radius: 8px;
+  object-fit: cover;
+  height: auto;
+}
+
+.section-text {
+  flex-basis: 70%; /* Adjust width as needed */
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ffffff; /* Black text color */
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ffffff; /* Dark gray text color */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section {
+      flex-direction: row;
+      align-items: center;
+      text-align: center; /* Center text on small screens */
+  }
+
+  .section-image {
+      margin-right: 0;
+      margin-bottom: 1rem;
+      max-width: 25%; /* Full width for small screens */
+  }
+
+  .section-text {
+      flex-basis: 75%; /* Full width for text */
+  }
+
+  .section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* Black text color */
+  }
+  
+  .section-description {
+    font-size: 0.75rem;
+    line-height: 1.6;
+    color: #ffffff; /* Dark gray text color */
+  }
+}

@@ -1,0 +1,33 @@
+.team-section {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+text-4xl font-bold text-center mb-12
+.team-section-title {
+    font-size: 4rem; /* Keeping the font size from the previous one */
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .team-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

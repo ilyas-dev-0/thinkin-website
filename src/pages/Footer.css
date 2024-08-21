@@ -1,0 +1,84 @@
+/* footer.css */
+.footer {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    padding: 2.5rem 0;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 640px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.footer-logo {
+    width: 8rem;
+    margin-bottom: 1rem;
+    filter: grayscale(100%); /* Makes the logo black and white */
+}
+
+.footer-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ffffff; /* White title */
+}
+
+.footer-link {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #ffffff; /* White links */
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #b3b3b3; /* Light gray on hover */
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-input {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #333333; /* Dark gray background */
+    color: #ffffff; /* White text */
+    border: none;
+}
+
+.footer-button {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    border: none;
+    cursor: pointer;
+}
+
+.footer-button:hover {
+    background-color: #e6e6e6; /* Lighter gray on hover */
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    border-top: 1px solid #333333; /* Dark gray border */
+    padding-top: 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: #b3b3b3; /* Light gray text */
+}
