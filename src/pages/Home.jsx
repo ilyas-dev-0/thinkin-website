@@ -7,6 +7,7 @@ import CarouselSection from '../components/CarouselSection'
 import TeamSection from './HomePage/Team';
 import Team1 from './HomePage/Team1';
 import Testimonials1 from './HomePage/Testimonials1';
+import Footer from '../components/Footer';
 
 function Home() {
     const [isVisible, setIsVisible] = useState(false);
@@ -23,7 +24,7 @@ function Home() {
         <AboutUs />
         <Testimonials1 />
         <Team1 />
-
+        <Footer />
 
 
         </section>

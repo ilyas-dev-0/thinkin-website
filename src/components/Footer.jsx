@@ -15,18 +15,6 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* Quick Links Section */}
-                <div>
-                    <h4 className="footer-title">Quick Links</h4>
-                    <ul>
-                        <li><Link to="/" className="footer-link">Home</Link></li>
-                        <li><Link to="/schools" className="footer-link">Schools</Link></li>
-                        <li><Link to="/colleges" className="footer-link">Colleges</Link></li>
-                        <li><Link to="/e-learning" className="footer-link">E-learning</Link></li>
-                        <li><Link to="/about" className="footer-link">About</Link></li>
-                    </ul>
-                </div>
-
                 {/* Contact Section */}
                 <div>
                     <h4 className="footer-title">Contact Us</h4>
