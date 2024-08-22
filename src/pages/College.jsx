@@ -1,6 +1,7 @@
 import React from 'react';
 import Tabs from '../components/TabSection'; // Import the Tabs component
 import './College.css'; // Import the CSS file for Schools
+import Tab1 from '../components/Tabs';
 
 const College = () => {
   const tabs = [
@@ -81,7 +82,7 @@ const College = () => {
   return (
     <div className="school-page">
     <div className='content'>
-      <Tabs tabs={tabs} /> {/* Pass the tabs data to the Tabs component */}
+    <Tab1 />
       </div>
     </div>
   );

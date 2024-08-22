@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+
+.tabs-section {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px ; /* Remove side padding to allow full-width content */
+    background-color: transparent;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center; /* Center the tabs */
+    gap: 6px;
+    background-color: #ffffff; /* Ensure the background matches the section */
+}
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background for inactive tabs */
+    border-radius: 8px 8px 8px 8px; /* Rounded top corners only */
+    font-weight: bold;
+    text-align: center;
+    flex: 1;
+    max-width: 300px; /* Limit the width of each tab */
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+    color: #ffffff; /* White text color for inactive tabs */
+}
+
+.tab:hover {
+    background-color: #000000; /* Dark gray hover effect for inactive tabs */
+}
+
+.tab.active {
+    background-color: rgba(0, 0, 0); /* Black background for active tab */
+    border-radius: 8px 8px 0px 0px; /* Rounded top corners only */
+    color: #ffffff; /* White text color for active tab */
+    margin-bottom: -10px; /* Align with content box */
+    border-bottom: 2px solid rgba(0, 0, 0); /* Match content box border */
+    z-index: 0;
+}
+
+.tab-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #000000;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    color: white; /* Added so text inside the container is visible */
+}
+
+.tab-section {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px; /* Space between sections */
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+
+
+.tab-section:hover {
+    background-color: rgba(255, 255, 255, 0.196);
+    padding: 30px;
+    transition: 500ms;
+}
+
+.tab-section-image {
+    margin-bottom: 10px; /* Space between image and text */
+    max-width: 30%;
+    
+}
+
+.tab-section-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.tab-section-image image {
+    max-width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.tab-section-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    
+    text-align: justify;
+    
+}
+
+.tab-section-text h2 {
+    font-family: 'Arial ', sans-serif;
+    font-size: 50px;
+    font-weight: 550; /* Bold weight */
+    margin-bottom: 10px;
+    color: #ffffff; /* Black text color for section titles */
+}
+
+.tab-section-text p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+

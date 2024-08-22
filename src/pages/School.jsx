@@ -1,93 +1,82 @@
 import React from 'react';
-import Tabs from '../components/TabSection'; // Import the Tabs component
-import './School.css'; // Import the CSS file for Schools
+import Tabs from '../components/Tabs';
+import './School.css'
+import OTTO from '../assets/WebSiteIlyasImages/OTTO.webp'
+import OTTOImage from '../assets/WebSiteIlyasImages/OTTO.webp';
 
-const Schools = () => {
+const School = () => {
   const tabs = [
-    {
-      id: 0,
+    { 
       label: 'Lab Setup',
       sections: [
-        {
-          title: 'STEM Kits',
-          image: 'https://via.placeholder.com/150',
-          description: 'Description for Section 1 in Tab 1',
+        { 
+          title: 'STEM Kits', 
+          content: 'Unlock the future of learning with our STEM Kits where creativity meets innovation, one experiment at a time!', 
+          image: 'path/to/overview-image.jpg' 
+        },
+        { 
+          title: '3D Printer', 
+          content: 'Bring your ideas to life with our 3D Printer turning imagination into tangible creations with precision and ease!', 
+          image: 'path/to/equipment-image.jpg' 
         },
 
-        {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 1',
-          },
-
-          {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 1',
-          },
-
-
-        // Additional sections
+        { 
+          title: 'AI Kit', 
+          content: 'Dive into the world of tomorrow with AI Kits—empower your students to build, code, and explore the future of artificial intelligence!', 
+          image: 'path/to/equipment-image.jpg' 
+        },
+        { 
+          title: 'OTTO Bot', 
+          content: 'Meet OTTO Bot: Your friendly, programmable companion that makes robotics fun and accessible for every learner!', 
+          image: OTTO
+        },
+        { 
+          title: 'Robot Arm', 
+          content: 'Master the art of automation with our Robot Arm design, build, and control your very own mechanical marvel!', 
+          image: 'path/to/equipment-image.jpg' 
+        },
       ],
     },
     {
-      id: 1,
-      label: 'Tab 2',
+      label: 'Academic Partner',
       sections: [
-        {
-          title: 'Section 1',
-          image: 'https://via.placeholder.com/150',
-          description: 'Description for Section 1 in Tab 2',
+        { 
+          title: 'Partner 1', 
+          content: 'Information about Partner 1...', 
+          image: 'path/to/partner1-image.jpg' 
         },
-        {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 2',
-          },
-          {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 2',
-          },
-        // Additional sections
+        { 
+          title: 'Partner 2', 
+          content: 'Information about Partner 2...', 
+          image: 'path/to/partner2-image.jpg' 
+        },
       ],
     },
     {
-      id: 2,
-      label: 'Tab 3',
+      label: 'ATL',
       sections: [
-        {
-          title: 'Section 1',
-          image: 'https://via.placeholder.com/150',
-          description: 'Description for Section 1 in Tab 3',
+        { 
+          title: 'Introduction', 
+          content: 'Introduction to ATL...', 
+          image: 'path/to/introduction-image.jpg' 
         },
-
-        {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 3',
-          },
-
-          {
-            title: 'Section 1',
-            image: 'https://via.placeholder.com/150',
-            description: 'Description for Section 1 in Tab 3',
-          },
-        // Additional sections
+        { 
+          title: 'Benefits', 
+          content: 'Benefits of ATL...', 
+          image: 'path/to/benefits-image.jpg' 
+        },
       ],
     },
   ];
+  
+
 
   return (
-    <div className="school-page">
-    <div className='empty'>
-
-    </div>
     <div>
-      <Tabs tabs={tabs} /> {/* Pass the tabs data to the Tabs component */}
-      </div>
+      <div className="empty"></div>
+      <Tabs tabs={tabs} />
     </div>
   );
 };
 
-export default Schools;
+export default School;
