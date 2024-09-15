@@ -13,7 +13,7 @@
     display: flex;
     justify-content: center; /* Center the tabs */
     gap: 6px;
-    background-color: #ffffff; /* Ensure the background matches the section */
+    background-color: transparent; /* Ensure the background matches the section */
 }
 
 .tab {
@@ -22,6 +22,7 @@
     background-color: rgba(0, 0, 0, 0.8); /* Black background for inactive tabs */
     border-radius: 8px 8px 8px 8px; /* Rounded top corners only */
     font-weight: bold;
+    font-size: px;
     text-align: center;
     flex: 1;
     max-width: 300px; /* Limit the width of each tab */
@@ -41,6 +42,9 @@
     margin-bottom: -10px; /* Align with content box */
     border-bottom: 2px solid rgba(0, 0, 0); /* Match content box border */
     z-index: 0;
+    transition: 500ms;
+    text-align: center;
+    align-items: center;
 }
 
 .tab-content {
@@ -58,18 +62,176 @@
     flex-direction: row;
     margin-bottom: 20px; /* Space between sections */
     background-color: rgba(255, 255, 255, 0.196);
-    padding: 20px 20px;
+    padding: 15px 15px;
     border-radius: 20px;
+    align-items: center;
+    transition: 500ms;
 }
 
 
 .tab-section:hover {
     background-color: rgba(255, 255, 255, 0.196);
-    padding: 30px;
+    padding: 20px;
     transition: 500ms;
 }
 
 .tab-section-image {
+    margin-left: 50px;
+    margin-bottom: 10px; /* Space between image and text */
+    max-width: 30%;
+    
+}
+
+.tab-section-image img {
+    max-width: 80%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+.tab-section-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family: 'Nunito', sans-serif;
+    text-align: justify;
+    
+}
+
+.tab-section-text h2 {
+    font-family: 'Arial ', sans-serif;
+    font-size: 30px;
+    font-weight: 550; /* Bold weight */
+    margin-bottom: 10px;
+    color: #ffffff; /* Black text color for section titles */
+}
+
+.tab-section-text li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 550;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+.quote {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 550;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .tab {
+        padding: 8px 18px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.8); /* Black background for inactive tabs */
+        border-radius: 8px 8px 8px 8px; /* Rounded top corners only */
+        font-weight: bold;
+        font-size: 17px;
+        text-align: center;
+        flex: 1;
+        max-width: 300px; /* Limit the width of each tab */
+        transition: all 0.3s ease;
+        margin-bottom: 5px;
+        color: #ffffff; /* White text color for inactive tabs */
+    }
+   
+.tab-section-text h2 {
+    font-family: 'Arial ', sans-serif;
+    font-size: 25px;
+    font-weight: 550; /* Bold weight */
+    margin-bottom: 10px;
+    color: #ffffff; /* Black text color for section titles */
+}
+
+.tab-section-text li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+
+.quote {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+
+
+.tab-section-image {
+    margin-left: 50px;
+    margin-bottom: 10px; /* Space between image and text */
+    max-width: 30%;
+    
+}
+
+.tab-section-image img {
+    max-width: 90%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .tab {
+        padding: 6px 16px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.8); /* Black background for inactive tabs */
+        border-radius: 8px 8px 8px 8px; /* Rounded top corners only */
+        font-weight: bold;
+        font-size: 13px;
+        text-align: center;
+        flex: 1;
+        max-width: 300px; /* Limit the width of each tab */
+        transition: all 0.3s ease;
+        margin-bottom: 5px;
+        color: #ffffff; /* White text color for inactive tabs */
+    }
+    
+    
+.tab-section-text h2 {
+    font-family: 'Arial ', sans-serif;
+    font-size: 20px;
+    font-weight: 550; /* Bold weight */
+    margin-bottom: 10px;
+    color: #ffffff; /* Black text color for section titles */
+}
+
+.tab-section-text li{
+    list-style: none;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+
+.quote {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    line-height: 1.6;
+    color: #ffffff; /* Black text color for section content */
+}
+
+.tab-section-image {
+    margin-left: 25px;
     margin-bottom: 10px; /* Space between image and text */
     max-width: 30%;
     
@@ -82,35 +244,5 @@
 }
 
 
-.tab-section-image image {
-    max-width: 100%; /* Make the image responsive */
-    height: auto;
-    border-radius: 10px;
-}
-
-
-.tab-section-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    font-family: 'Nunito', sans-serif;
-    
-    text-align: justify;
-    
-}
-
-.tab-section-text h2 {
-    font-family: 'Arial ', sans-serif;
-    font-size: 50px;
-    font-weight: 550; /* Bold weight */
-    margin-bottom: 10px;
-    color: #ffffff; /* Black text color for section titles */
-}
-
-.tab-section-text p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #ffffff; /* Black text color for section content */
 }
 

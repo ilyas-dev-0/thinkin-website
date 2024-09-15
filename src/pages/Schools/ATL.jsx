@@ -4,7 +4,7 @@ import STEMKit from '../../assets/STEM.jpg'
 const ATL = () => {
   return (
     <>
-         <div className="flex flex-wrap justify-center gap-6 p-4">
+      <div className="flex flex-wrap justify-center gap-6 p-4">
       <CustomCard
         imageSrc={STEMKit}
         title="Robotics Club"

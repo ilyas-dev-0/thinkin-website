@@ -1,48 +1,55 @@
 import React from 'react';
 import TestimonialCard from '../../components/TestimonialCard';
 import './Testimonials1.css';
+import Ilyas from '../../assets/WebSiteIlyasImages/Profile/boy.png'
+import Niyam from '../../assets/WebSiteIlyasImages/Profile/bussiness-man.png'
+import Alwin from '../../assets/WebSiteIlyasImages/Profile/user.png'
+import Viveck from '../../assets/WebSiteIlyasImages/Profile/man (1).png'
+import Ubada from '../../assets/WebSiteIlyasImages/Profile/man.png'
+import Prathipa from '../../assets/WebSiteIlyasImages/Profile/kid.png'
 
 const Testimonials1 = () => {
     const testimonials = [
         {
             quote: 'Thinkin Lab has transformed the way we approach STEM education.',
-            name: 'Alice Johnson',
+            name: 'Ilyas',
             role: 'Principal, Green Valley School',
-            image: 'path/to/alice-image.jpg',
+            image: Ilyas,
         },
         {
             quote: 'The innovative approach by Thinkin Lab has been a game-changer for our students.',
-            name: 'Mark Thompson',
+            name: 'Niyamath',
             role: 'Head of Science, Red Oak High',
-            image: 'path/to/mark-image.jpg',
+            image: Niyam,
         },
         {
             quote: 'Our students are more engaged and enthusiastic about learning.',
-            name: 'Sarah Williams',
+            name: 'Alwin',
             role: 'STEM Coordinator, Blue River Academy',
-            image: 'path/to/sarah-image.jpg',
+            image: Alwin,
         },
 
         {
-            quote: 'Our students are more engaged and enthusiastic about learning.',
-            name: 'Sarah Williams',
-            role: 'STEM Coordinator, Blue River Academy',
-            image: 'path/to/sarah-image.jpg',
+            quote: 'STEM has transformed the way our students approach problem-solving.',
+            name: 'Ubada',
+            role: 'Science Teacher, Green Valley High',
+            image: Ubada,
         },
-
+        
         {
-            quote: 'Our students are more engaged and enthusiastic about learning.',
-            name: 'Sarah Williams',
-            role: 'STEM Coordinator, Blue River Academy',
-            image: 'path/to/sarah-image.jpg',
+            quote: 'Our robotics program has inspired a new generation of innovators.',
+            name: 'Viveck',
+            role: 'Robotics Instructor, Westwood School',
+            image: Viveck,
         },
-
+        
         {
-            quote: 'Our students are more engaged and enthusiastic about learning.',
-            name: 'Sarah Williams',
-            role: 'STEM Coordinator, Blue River Academy',
-            image: 'path/to/sarah-image.jpg',
+            quote: 'The 3D printing lab has sparked creativity and critical thinking in our students.',
+            name: 'Prathipa',
+            role: 'Technology Specialist, Redwood Academy',
+            image: Prathipa,
         },
+        
         // Add more testimonials as needed
     ];
 

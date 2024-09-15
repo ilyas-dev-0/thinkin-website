@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import './Tabs.css';
-import stem from '../assets/STEM.jpg'
-import OTTO from '../assets/WebSiteIlyasImages/OTTO.webp'
+import stem from '../assets/STEM.jpg';
+import OTTO from '../assets/WebSiteIlyasImages/OTTO.webp';
 import OTTOImage from '../assets/WebSiteIlyasImages/OTTO.webp';
 
-
 const Tabs = ({ tabs }) => {
-
-
   const [activeTab, setActiveTab] = useState(tabs[0].label);
 
   const renderContent = () => {
@@ -21,7 +18,12 @@ const Tabs = ({ tabs }) => {
             </div>
             <div className="tab-section-text">
               <h2>{section.title}</h2>
-              <p>{section.content}</p>
+              <h3 className="quote">{section.quote}</h3>
+              <ul className="list-disc list-inside">
+                {section.content.map((point, idx) => (
+                  <li key={idx} className='description'>{point}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}

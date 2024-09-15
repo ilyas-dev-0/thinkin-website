@@ -1,25 +1,28 @@
 import React from 'react';
 import TeamMemberCard from '../../components/TeamMemberCard';
 import './Team1.css';
+import ilyas from '../../assets/WebSiteIlyasImages/Profile/office-worker.png'
+import niyam from '../../assets/WebSiteIlyasImages/Profile/man 3.png'
+import prathipa from '../../assets/WebSiteIlyasImages/Profile/woman.png'
 
 const Team1 = () => {
     const teamMembers = [
         {
-            name: 'John Doe',
+            name: 'Niyamath',
             role: 'Lead Developer',
-            image: 'path/to/john-image.jpg',
+            image: niyam,
             description: 'John is an experienced developer with a passion for building scalable applications.',
         },
         {
-            name: 'Jane Smith',
+            name: 'Ilyas Ahamed',
             role: 'UI/UX Designer',
-            image: 'path/to/jane-image.jpg',
+            image: ilyas,
             description: 'Jane specializes in creating intuitive and beautiful user interfaces.',
         },
         {
-            name: 'Sam Wilson',
+            name: 'Prathipa',
             role: 'Project Manager',
-            image: 'path/to/sam-image.jpg',
+            image: prathipa,
             description: 'Sam ensures that projects are delivered on time and within budget.',
         },
         // Add more team members as needed

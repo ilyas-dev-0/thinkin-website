@@ -49,12 +49,6 @@ const CarouselSection = () => {
            <D3printing />
           </div>
         </div>
-        <div className="carousel-slide">
-          <div className="carousel-content">
-            <h2 className="text-3xl font-bold">Section 3</h2>
-            <p className="text-lg">This is the third section.</p>
-          </div>
-        </div>
       </Slider>
     </div>
   );

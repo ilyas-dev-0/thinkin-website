@@ -23,8 +23,6 @@ function App() {
         
       <Route path="/schools" element={<School/>}/>
       <Route path="/schoolc" element={<Sch/>}/>
-    
-      <Route path="/colleges" element={<College/>}/>
       
 
         {/* Add other routes here */}
